@@ -19,10 +19,10 @@ const CarCard = ({ car }: CarCardProps) => {
 
   return (
     <div className="car-card group">
-      <div className="car-card__content">
-        <h2 className="car-card__content-title">
-          {make}
-          {model}
+      <div className=" flex car-card__content">
+        <h2 className="car-card__content-title">{make}</h2>
+        <h2 className="text-[18px]">
+          {model.charAt(0).toUpperCase() + model.slice(1)}
         </h2>
       </div>
 
